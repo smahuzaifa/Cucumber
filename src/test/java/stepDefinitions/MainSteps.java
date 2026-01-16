@@ -2,6 +2,8 @@
 
     import io.cucumber.java.en.*;
 
+    import java.util.List;
+
     public class MainSteps {
         @Given("user is on the landing page")
         public void user_is_on_the_landing_page() {
@@ -22,5 +24,19 @@
         @Then("cards should be displayed")
         public void cards_should_be_displayed() {
             System.out.println("cards should be displayed");
+        }
+        //Data Driven Testing
+        @Given("user is on the registration page")
+        public void user_is_on_the_registration_page() {
+            System.out.println("user is on the registration page");
+        }
+        @When("user opens the form and is entering data")
+        public void user_opens_the_form_and_is_entering_data(List<String> data) {
+            for (String field : data) {
+                //Use enhanced for loop for simple read-only iteration without index needs;
+                // use regular for loop when requiring index access, element modification,
+                // reverse iteration, or step-by-step processing.
+                System.out.println(field);
+            }
         }
     }
