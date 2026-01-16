@@ -39,4 +39,19 @@
                 System.out.println(field);
             }
         }
+        //Background codes
+        @Given("setup the entries in database")
+        public void setup_the_entries_in_database() {
+            System.out.println();
+            System.out.println("setup the entries in database");
+        }
+        @Given("launch the browser from config variables")
+        public void launch_the_browser_from_config_variables() {
+            System.out.println("launch the browser from config variables");
+        }
+        @Given("hit the homepage url of your application")
+        public void hit_the_homepage_url_of_your_application() {
+            System.out.println("hit the homepage url of your application");
+        }
+
     }

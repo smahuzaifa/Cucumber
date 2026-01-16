@@ -1,6 +1,12 @@
 @tag
   Feature: Application login
 
+  Background: #Get executed before each and every scenario
+    #The scope sits in only this feature file
+    Given setup the entries in database
+    And launch the browser from config variables
+    And hit the homepage url of your application
+
     Scenario: Admin Page Default Login
       Given user is on the landing page
       When user login into the application with "admin" and password "1234"
