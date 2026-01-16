@@ -24,6 +24,7 @@
         @Then("cards should be displayed")
         public void cards_should_be_displayed() {
             System.out.println("cards should be displayed");
+            System.out.println();
         }
         //Data Driven Testing
         @Given("user is on the registration page")
@@ -42,7 +43,7 @@
         //Background codes
         @Given("setup the entries in database")
         public void setup_the_entries_in_database() {
-            System.out.println();
+            System.out.println("Background code is executed");
             System.out.println("setup the entries in database");
         }
         @Given("launch the browser from config variables")
@@ -52,6 +53,16 @@
         @Given("hit the homepage url of your application")
         public void hit_the_homepage_url_of_your_application() {
             System.out.println("hit the homepage url of your application");
+        }
+        @Given("User is on the netbanking page")
+        public void user_is_on_the_netbanking_page() {
+            System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            System.out.println("user is on the netbanking page");
+        }
+        @Given("User is on the mortgage registration page")
+        public void user_is_on_the_mortgage_registration_page() {
+            System.out.println("************************");
+            System.out.println("user is on the mortgage registration page");
         }
 
     }

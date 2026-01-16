@@ -1,0 +1,6 @@
+1. @Before hook matching scenario tag
+2. Background Given steps (ALL execute)
+3. Scenario Given steps
+4. When steps (+ DataTable if present)
+5. Then steps
+6. @After hook (if defined)
