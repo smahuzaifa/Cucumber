@@ -14,6 +14,7 @@
       Then Home page should be displayed
       And cards should be displayed
 
+
     #Parametarisation : When we want to run the same test case but with different credentials
     Scenario Outline: User Page Default Login
       Given user is on the landing page
